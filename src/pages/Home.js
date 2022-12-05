@@ -3,6 +3,8 @@ import Header from "../component/Header";
 import Footer from "../component/Footer";
 import HeroSection from '../component/HeroSection';
 import Project from '../component/Project';
+import Blog from '../component/Blog';
+import About from '../component/About';
 
 
 const Home = ()=> {
@@ -11,8 +13,9 @@ const Home = ()=> {
         <Header/>
         <HeroSection/>
         <Project/>
-        <h1>home</h1>
-      <Footer/>
+        <Blog/>
+        <About/>
+        <Footer/>
     </div>
   )
 }

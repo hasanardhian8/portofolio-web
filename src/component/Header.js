@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import logo from "../images/logo ha(hasan+ardhian).png"
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -9,8 +10,9 @@ const Header = () => {
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <a href="#">
-                <h2 className="text-2xl font-bold">LOGO</h2>
+              <a href="#" class="flex items-center">
+                <img src={logo} class="h-6 mr-3 sm:h-9" alt="hasanardhian"/>
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">Hasan Ardhian</span>
               </a>
               <div className="md:hidden">
                 <button
@@ -61,13 +63,16 @@ const Header = () => {
                   <a href="javascript:void(0)">Home</a>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
+                  <a href="portofolio">Project</a>
+                </li>
+                <li className="text-gray-600 hover:text-blue-600">
                   <a href="javascript:void(0)">Blog</a>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="javascript:void(0)">About US</a>
+                  <a href="javascript:void(0)">About</a>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="javascript:void(0)">Contact US</a>
+                  <a href="javascript:void(0)">Contact</a>
                 </li>
               </ul>
             </div>

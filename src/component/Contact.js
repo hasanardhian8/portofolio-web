@@ -1,9 +1,117 @@
 import React from "react";
 
-const Footer = () => {
+const contact = () => {
   return (
     <div>
-      <section class="bg-white">
+      <section id="contact" class="relative py-24 bg-white h-screen text-center text-gray-800">
+        <div class="max-w-[700px] mx-auto px-3 lg:px-6">
+          <h2 class="text-3xl font-bold mb-12">Contact us</h2>
+          <form>
+            <div class="form-group mb-6">
+              <input
+                type="text"
+                class="form-control block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleInput7"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group mb-6">
+              <input
+                type="email"
+                class="form-control block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleInput8"
+                placeholder="Email address"
+              />
+            </div>
+            <div class="form-group mb-6">
+              <textarea
+                class="
+            form-control
+            block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+          "
+                id="exampleFormControlTextarea13"
+                rows="3"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="form-group form-check text-center mb-6">
+              <input
+                type="checkbox"
+                class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+                id="exampleCheck87"
+                checked
+              />
+              <label
+                class="form-check-label inline-block text-gray-800"
+                for="exampleCheck87"
+              >
+                Send me a copy of this message
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="
+          w-full
+          px-6
+          py-2.5
+          bg-blue-600
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-blue-700 hover:shadow-lg
+          focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-blue-800 active:shadow-lg
+          transition
+          duration-150
+          ease-in-out"
+            >
+              Send
+            </button>
+          </form>
+        </div>
         <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
@@ -11,47 +119,7 @@ const Footer = () => {
                 href="kuda"
                 class="text-base leading-6 text-gray-500 hover:text-gray-900"
               >
-                About
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="kuda"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Blog
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="kuda"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Team
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="kuda"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Pricing
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="kuda"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Contact
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="kuda"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Terms
+                Social Media
               </a>
             </div>
           </nav>
@@ -73,7 +141,7 @@ const Footer = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </a>*/}
             <a
               href="https://www.instagram.com/hasanardhian/"
               class="text-gray-400 hover:text-gray-500"
@@ -91,7 +159,7 @@ const Footer = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+  </a>
             <a
               href="https://twitter.com/hasan_ardhian"
               class="text-gray-400 hover:text-gray-500"
@@ -105,7 +173,7 @@ const Footer = () => {
               >
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
               </svg>
-            </a> */}
+            </a>
             <a
               href="https://github.com/hasanardhian8"
               class="text-gray-400 hover:text-gray-500"
@@ -124,7 +192,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-            <a href="kuda" class="text-gray-400 hover:text-gray-500">
+            <a href="https://www.linkedin.com/in/hasan-ardhian-abb114156/" class="text-gray-400 hover:text-gray-500">
               <span class="sr-only">LinkIn</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +205,7 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="kuda" class="text-gray-400 hover:text-gray-500">
+            {/* <a href="kuda" class="text-gray-400 hover:text-gray-500">
               <span class="sr-only">Google</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +217,7 @@ const Footer = () => {
                   d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
           <p class="mt-8 text-base leading-6 text-center text-gray-400">
             © 2022 hasan ardhian. All rights reserved.
@@ -160,4 +228,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default contact;

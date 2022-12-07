@@ -1,19 +1,19 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import { useState } from "react";
 import logo from "../images/logo ha(hasan+ardhian).png"
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div>
-      <nav className="w-full bg-white shadow">
+      <nav className="w-full bg-white shadow fixed z-10 top-0">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <a href="#" class="flex items-center">
+              <Link smooth to="#hero" class="flex items-center">
                 <img src={logo} class="h-6 mr-3 sm:h-9" alt="hasanardhian"/>
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">Hasan Ardhian</span>
-              </a>
+              </Link>
               <div className="md:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -60,26 +60,25 @@ const Header = () => {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="javascript:void(0)">Home</a>
+                  <Link smooth to="#hero">Home</Link>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="portofolio">Project</a>
+                  <Link smooth to="#project">Project</Link>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="javascript:void(0)">Blog</a>
+                  <Link smooth to="#blog">Blog</Link>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="javascript:void(0)">About</a>
+                  <Link smooth to="#about">About</Link>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="javascript:void(0)">Contact</a>
+                  <Link smooth to="#contact">Contact</Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-    </div>
   );
 };
 

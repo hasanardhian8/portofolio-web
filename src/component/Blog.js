@@ -3,7 +3,11 @@ import React from "react";
 const Blog = () => {
   return (
     <div>
-      <div class="flex flex-col h-screen bg-center bg-cover bg-no-repeat bg-gray-100">
+      <section id="blog" class="relative py-24 bg-white h-screen">  
+      <div class="mb-12 space-y-2 text-center">
+        <h2 class="text-2xl text-cyan-900 font-bold md:text-4xl">Blog</h2>
+        <p class="lg:w-6/12 lg:mx-auto">Blog dibuat untuk mengisi waktu luang</p>
+      </div>
         <div class="grid place-items-center w-4/5 mx-auto p-10 my-20 sm:my-auto bg-white-600 border-4 border-indigo-600 bg-opacity-70 rounded-xl shadow-2xl space-y-5 text-center cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,16 +25,11 @@ const Blog = () => {
             Coming Soon
           </h1>
           <h2 class="text-xl text-gray-700 transition duration-500">
-            We are almost there to introduce our new{" "}
-            <a class="hover:underline" href="https://www.emojimania.org">
-              emoji
-            </a>{" "}
-            website to the world, in the meantime, you can follow us on social
-            networks to get the latest updates.
+            Be patient, Dear
           </h2>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

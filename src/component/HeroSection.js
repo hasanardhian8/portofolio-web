@@ -10,14 +10,14 @@ const HeroSection = () => {
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div class="max-w-xl text-center sm:text-left">
             <h1 class="text-3xl font-extrabold sm:text-5xl">
-              Hi There,
+              Hi,
               <strong class="block font-extrabold text-rose-700">
                 I'm Hasan Ardhian
               </strong>
             </h1>
 
             <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-              I am Into Web Developer
+              i'm a web developer based on Yogyakarta, I work using the NodeJs and ReactJs programming languages.
             </p>
 
             <div class="mt-8 flex flex-wrap gap-4 text-center">

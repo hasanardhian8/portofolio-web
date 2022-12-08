@@ -6,7 +6,7 @@ const Blog = () => {
       <section id="blog" class="relative py-24 bg-white h-screen">  
       <div class="mb-12 space-y-2 text-center">
         <h2 class="text-2xl text-cyan-900 font-bold md:text-4xl">Blog</h2>
-        <p class="lg:w-6/12 lg:mx-auto">Blog dibuat untuk mengisi waktu luang</p>
+        <p class="lg:w-6/12 lg:mx-auto">Blogs are created to fill spare time</p>
       </div>
         <div class="grid place-items-center w-4/5 mx-auto p-10 my-20 sm:my-auto bg-white-600 border-4 border-indigo-600 bg-opacity-70 rounded-xl shadow-2xl space-y-5 text-center cursor-pointer">
           <svg

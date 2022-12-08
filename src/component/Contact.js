@@ -1,12 +1,38 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-const contact = () => {
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_uvrgu8p",
+        "template_cy8mmxm",
+        form.current,
+        "u2qkLyBDP6GWb9Ex5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
-      <section id="contact" class="relative py-24 bg-white h-screen text-center text-gray-800">
+      <section
+        id="contact"
+        class="relative py-24 bg-white h-screen text-center text-gray-800"
+      >
         <div class="max-w-[700px] mx-auto px-3 lg:px-6">
-          <h2 class="text-3xl font-bold mb-12">Contact us</h2>
-          <form>
+          <h2 class="text-3xl font-bold mb-12">Contact Me</h2>
+          <form ref={form} onSubmit={sendEmail}>
             <div class="form-group mb-6">
               <input
                 type="text"
@@ -26,6 +52,7 @@ const contact = () => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 id="exampleInput7"
                 placeholder="Name"
+                name="user_name"
               />
             </div>
             <div class="form-group mb-6">
@@ -47,6 +74,7 @@ const contact = () => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 id="exampleInput8"
                 placeholder="Email address"
+                name="user_email"
               />
             </div>
             <div class="form-group mb-6">
@@ -71,21 +99,8 @@ const contact = () => {
                 id="exampleFormControlTextarea13"
                 rows="3"
                 placeholder="Message"
+                name="message"
               ></textarea>
-            </div>
-            <div class="form-group form-check text-center mb-6">
-              <input
-                type="checkbox"
-                class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                id="exampleCheck87"
-                checked
-              />
-              <label
-                class="form-check-label inline-block text-gray-800"
-                for="exampleCheck87"
-              >
-                Send me a copy of this message
-              </label>
             </div>
             <button
               type="submit"
@@ -107,11 +122,14 @@ const contact = () => {
           transition
           duration-150
           ease-in-out"
+              value="Send"
             >
               Send
             </button>
           </form>
         </div>
+
+        {/* social media */}
         <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
@@ -159,7 +177,7 @@ const contact = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-  </a>
+            </a>
             <a
               href="https://twitter.com/hasan_ardhian"
               class="text-gray-400 hover:text-gray-500"
@@ -192,7 +210,10 @@ const contact = () => {
                 ></path>
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/hasan-ardhian-abb114156/" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="https://www.linkedin.com/in/hasan-ardhian-abb114156/"
+              class="text-gray-400 hover:text-gray-500"
+            >
               <span class="sr-only">LinkIn</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -228,4 +249,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

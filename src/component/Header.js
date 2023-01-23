@@ -11,7 +11,7 @@ const Header = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link smooth to="#hero" class="flex items-center">
-                <img src={logo} class="h-6 mr-3 sm:h-9" alt="hasanardhian"/>
+                <img src={logo} class="h-6 mr-3 sm:h-9" alt="logo-hasan"/>
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">Hasan Ardhian</span>
               </Link>
               <div className="md:hidden">
